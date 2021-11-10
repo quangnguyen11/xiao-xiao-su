@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
 import com.zhengqing.modules.system.entity.RoleMenu;
 import com.zhengqing.modules.system.dto.input.RoleMenuQueryPara;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @author: zhengqing
  * @date: 2019-08-20
  */
+@EnableAutoConfiguration
 public interface IRoleMenuService extends IService<RoleMenu> {
 
     /**

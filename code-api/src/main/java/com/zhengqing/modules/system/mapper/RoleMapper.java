@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import com.zhengqing.modules.system.dto.input.RoleQueryPara;
 import com.zhengqing.modules.system.entity.Role;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * @author : zhengqing
  * @date : 2019-08-20
  */
+@EnableAutoConfiguration
 public interface RoleMapper extends BaseMapper<Role> {
 
     /**

@@ -5,6 +5,7 @@ import com.zhengqing.modules.system.dto.input.LogQueryPara;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * @author : zhengqing
  * @date : 2019-09-18 10:51:57
  */
+@EnableAutoConfiguration
 public interface LogMapper extends BaseMapper<SysLog> {
 
     /**
