@@ -9,6 +9,7 @@ import com.zhengqing.modules.system.mapper.RoleMapper;
 import com.zhengqing.modules.system.mapper.UserMapper;
 import com.zhengqing.modules.system.mapper.UserRoleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -26,6 +27,7 @@ import java.util.List;
  * @date : 2019/10/14 17:46
  */
 @Service("userDetailsService")
+@EnableAutoConfiguration
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired

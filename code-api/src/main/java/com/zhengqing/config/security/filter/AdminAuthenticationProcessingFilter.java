@@ -8,6 +8,7 @@ import com.zhengqing.config.security.login.AdminAuthenticationFailureHandler;
 import com.zhengqing.config.security.login.AdminAuthenticationSuccessHandler;
 import com.zhengqing.modules.system.entity.User;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -28,6 +29,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Slf4j
 @Component
+@EnableAutoConfiguration
 public class AdminAuthenticationProcessingFilter extends AbstractAuthenticationProcessingFilter {
 
     /**

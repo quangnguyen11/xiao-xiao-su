@@ -1,5 +1,6 @@
 package com.zhengqing.config.security.login;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.ProviderNotFoundException;
 import org.springframework.security.core.Authentication;
@@ -16,6 +17,7 @@ import java.util.Objects;
  * @date : 2019/10/12 14:49
  */
 @Component
+@EnableAutoConfiguration
 public class CusAuthenticationManager implements AuthenticationManager {
 
     private final AdminAuthenticationProvider adminAuthenticationProvider;

@@ -1,6 +1,7 @@
 package com.zhengqing.config;
 
 import lombok.Data;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
  * @date : 2019/8/19 9:07
  */
 @Data
+@EnableAutoConfiguration
 @ConfigurationProperties(prefix = "zhengqing", ignoreUnknownFields = false)
 public class MyProperties {
 
